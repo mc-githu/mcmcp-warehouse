@@ -92,8 +92,9 @@ public class RiftRenderer extends EntityRenderer<RiftEntity> {
             double len = dir.length();
             int n = Math.max(2, (int) (len / 0.22));
 
-            // 动画：链节沿锁链往裂缝方向"流动"
-            double flow = (e.tickCount + partialTick) * 0.10;
+            // 动画：链节沿锁链"流动"，方向跟着包裹走
+            //   收进来（!outgoing）：门 → 我；送出去（outgoing）：我 → 门
+            double flow = (e.tickCount + partialTick) * 0.10 * (e.isOutgoing() ? -1.0 : 1.0);
 
             for (int i = 0; i <= n; i++) {
                 double f = (((i + flow) % n) + n) % n / (double) n;
@@ -101,8 +102,16 @@ public class RiftRenderer extends EntityRenderer<RiftEntity> {
                 Vec3 wp = from.add(dir.scale(f));
                 pose.pushPose();
                 pose.translate(wp.x - e.getX(), wp.y - e.getY(), wp.z - e.getZ());
-                pose.mulPose(this.entityRenderDispatcher.cameraOrientation());
-                // 竖着的链节（比原来更长一点，看着像真链子）
+                // 先让平面朝向摄像机（广告牌），再在屏幕平面内旋转，
+                // 让链节的长边对齐锁链的实际走向 —— 不转的话每一节都是竖直的
+                org.joml.Quaternionf camRot = this.entityRenderDispatcher.cameraOrientation();
+                pose.mulPose(camRot);
+                org.joml.Vector3f rightV = camRot.transform(new org.joml.Vector3f(1f, 0f, 0f));
+                org.joml.Vector3f upV = camRot.transform(new org.joml.Vector3f(0f, 1f, 0f));
+                double projX = dir.x * rightV.x + dir.y * rightV.y + dir.z * rightV.z;
+                double projY = dir.x * upV.x + dir.y * upV.y + dir.z * upV.z;
+                float tilt = (float) Math.toDegrees(Math.atan2(-projX, projY));
+                pose.mulPose(Axis.ZP.rotationDegrees(tilt));
                 quad(pose, buffer, TEX_CHAIN, -0.075f, -0.185f, 0.075f, 0.185f, 0xFFFFFFFF);
                 pose.popPose();
             }

@@ -14,13 +14,9 @@ public class ClientModEvents {
         event.register(ModKeyBindings.OPEN_HUB);
     }
 
-    /** 把成交动画注册成「画在最上层」的 GUI 图层 */
-    @SubscribeEvent
-    public static void registerGuiLayers(net.neoforged.neoforge.client.event.RegisterGuiLayersEvent event) {
-        event.registerAboveAll(
-                net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(CommHub.MODID, "trade_effect"),
-                TradeEffectRenderer::render);
-    }
+    // 2D 成交动画（TradeEffectRenderer）已停用：
+    // 它注册为 GUI 最上层图层，会把 3D 的裂缝 / 锁链 / 包裹整个盖住。
+    // 成交动画现在完全由 RiftEntity + RiftRenderer 负责。
 
     /** 空间裂缝的 3D 渲染器 */
     @SubscribeEvent

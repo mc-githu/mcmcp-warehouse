@@ -1195,11 +1195,10 @@ public class ModNetworking {
             if (fxWant.isEmpty()) fxWant = st;
             fxWantCount += st.getCount();
         }
-        String accepterName = player.getGameProfile().getName();
-        PacketDistributor.sendToPlayer(player, new TradeEffect(true, owner.getGameProfile().getName(), fxWant, fxWantCount));
-        PacketDistributor.sendToPlayer(player, new TradeEffect(false, owner.getGameProfile().getName(), fxOffer, fxOfferCount));
-        PacketDistributor.sendToPlayer(owner, new TradeEffect(true, accepterName, fxOffer, fxOfferCount));
-        PacketDistributor.sendToPlayer(owner, new TradeEffect(false, accepterName, fxWant, fxWantCount));
+        // 成交动画统一走 3D 实体（见 spawnRiftFor）。
+        // 以前这里还会发 TradeEffect 播一套 2D 屏幕动画，但它注册成 GUI 最上层图层，
+        // 会把 3D 的裂缝、锁链、包裹整个盖住 —— 所以不再发送。
+        // 双方各自看到的「送出去 / 收进来」两段动画，由 3D 实体自己表现。
 
         data.removeTrade(trade.id());
         broadcastTrades(player.getServer());

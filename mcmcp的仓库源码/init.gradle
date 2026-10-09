@@ -1,12 +1,31 @@
-// Remove repositories that point to the blocked maven.neoforged.net host.
-// All their content is mirrored by StellarDrift / BMCLAPI / Aliyun.
-allprojects {
-    afterEvaluate { p ->
-        def blocked = p.repositories.findAll {
-            it.name == "NeoForged Releases" || it.name == "Mojang Meta"
-        }
-        blocked.each { r ->
+// 这台机器上两个"镜像"其实都不可用：
+//   maven.neoforged.net  -> 连接直接超时（Cloudflare 不可达）
+//   repo.stellardrift.ca -> 简单请求能回 200，但下载文件时挂起（NoHttpResponseException）
+// 实测只有 BMCLAPI 镜像既快（约 240ms）又构件齐全，所以只保留它。
+//
+// 注意：Gradle 不会自动加载项目根目录的 init.gradle，
+//       构建时必须显式传入：gradle build -I init.gradle
+
+def isMaven = { r -> r instanceof org.gradle.api.artifacts.repositories.MavenArtifactRepository }
+def isBlocked = { r ->
+    if (!isMaven(r)) return false
+    def u = r.url.toString()
+    return u.contains("neoforged") || u.contains("stellardrift")
+}
+def hasMirror = { project ->
+    project.repositories.any { r -> isMaven(r) && r.url.toString().contains("qlu.edu.cn") }
+}
+
+allprojects { p ->
+    p.afterEvaluate {
+        def removed = p.repositories.findAll { r -> isBlocked(r) }
+        removed.each { r ->
             p.repositories.remove(r)
+            println "[init] 移除不可用仓库: " + r.name + " -> " + r.url
+        }
+        if (!hasMirror(p)) {
+            p.repositories.maven { url = uri("https://mirrors4.qlu.edu.cn/bmclapi/") }
+            println "[init] 为 " + p.name + " 添加 BMCLAPI 镜像"
         }
     }
 }
