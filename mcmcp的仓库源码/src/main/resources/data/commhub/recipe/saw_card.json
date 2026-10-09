@@ -1,0 +1,18 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "create" }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PAP",
+    "AKA",
+    "PMP"
+  ],
+  "key": {
+    "P": { "item": "minecraft:paper" },
+    "A": { "item": "create:iron_sheet" },
+    "K": { "item": "commhub:automation_core" },
+    "M": { "item": "create:mechanical_saw" }
+  },
+  "result": { "id": "commhub:saw_card", "count": 1 }
+}

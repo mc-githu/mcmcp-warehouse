@@ -1,0 +1,13 @@
+{
+  "name": "Private Warehouses & Permissions",
+  "icon": "commhub:add_member_tool",
+  "category": "commhub:warehouse",
+  "sortnum": 2,
+  "pages": [
+    { "type": "patchouli:text", "text": "A private warehouse has three roles:$(br2)$(l)Owner$(/l) - the creator, never changes$(br2)$(l)Admin$(/l) - at most $(l)one$(/l) per warehouse, may be empty$(br2)$(l)Member$(/l) - can only store/withdraw items" },
+    { "type": "patchouli:text", "text": "The right side of the warehouse screen has $(l)3 management tool slots$(/l): add member, remove member, admin tool.$(br2)The admin tool switches automatically: it shows $(l)Grant Admin$(/l) when there is no admin yet, and $(l)Transfer Admin$(/l) once there is one.$(br2)Both are the same action: the target becomes admin and you stop being admin (you stay the owner)." },
+    { "type": "patchouli:text", "text": "Management tools have $(l)no recipe$(/l) - the warehouse provides them: they appear in the 3 slots when the warehouse is created.$(br2)Only the $(l)owner and admin$(/l) can take and use them; members and others cannot." },
+    { "type": "patchouli:text", "text": "$(l)Bind$(/l): put the tools into the 3 slots and press Bind to bind them to this warehouse (once per warehouse).$(br2)$(l)Reset tools$(/l): if they are lost, one click collects them and refills the slots." },
+    { "type": "patchouli:text", "text": "The shared warehouse has no owner: everyone can use it and it has no management tools." }
+  ]
+}

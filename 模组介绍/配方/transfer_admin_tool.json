@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "create" }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "create:sturdy_sheet" },
+    { "item": "create:brass_hand" },
+    { "item": "create:precision_mechanism" }
+  ],
+  "result": { "id": "commhub:transfer_admin_tool", "count": 1 }
+}

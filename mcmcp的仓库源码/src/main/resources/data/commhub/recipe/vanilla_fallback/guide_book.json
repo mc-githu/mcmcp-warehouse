@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:not", "value": { "type": "neoforge:mod_loaded", "modid": "create" } },
+    { "type": "neoforge:mod_loaded", "modid": "patchouli" }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:book" },
+    { "item": "minecraft:paper" }
+  ],
+  "result": { "id": "commhub:guide_book", "count": 1 }
+}

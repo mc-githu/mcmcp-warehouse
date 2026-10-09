@@ -1,0 +1,24 @@
+# ===== 本地工具链与构建缓存（不入库）=====
+.tools/
+mcmcp的仓库源码/build/
+mcmcp的仓库源码/.gradle/
+mcmcp的仓库源码.bak/
+
+# ===== 打包好的 jar 走 GitHub Releases，不进仓库 =====
+# （模组归档/README.md 是版本清单，保留）
+模组归档/*.jar
+/mcmcp_warehouse-*.jar
+
+# ===== 与模组无关的本地产物 =====
+鹈鹕骑自行车.html
+鹈鹕骑自行车-预览.png
+
+# ===== Windows 系统文件 =====
+Thumbs.db
+desktop.ini
+*.lnk
+
+# ===== 编辑器 =====
+.idea/
+*.iml
+.vscode/

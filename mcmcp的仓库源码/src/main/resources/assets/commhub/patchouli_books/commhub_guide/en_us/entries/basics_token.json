@@ -1,0 +1,10 @@
+{
+  "name": "管理员凭证",
+  "icon": "commhub:membership_token",
+  "category": "commhub:basics",
+  "sortnum": 1,
+  "pages": [
+    { "type": "patchouli:text", "text": "右键【管理员凭证】获得管理员权限，并弹出创建私人仓库的起名框。$(br2)凭证需要贵重材料合成，使用后消耗；如果仓库名重了，凭证不会消耗。" },
+    { "type": "patchouli:crafting", "recipe": "commhub:membership_token", "text": "凭证配方（贵重材料）" }
+  ]
+}

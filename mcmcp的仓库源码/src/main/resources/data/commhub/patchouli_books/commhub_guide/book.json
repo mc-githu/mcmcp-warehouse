@@ -1,0 +1,10 @@
+{
+  "name": "mcmcp的仓库指南",
+  "landing_text": "欢迎使用 mcmcp的仓库！按 K 打开主界面，右键方块可设目标。$(br2)这本手册介绍所有功能。",
+  "version": 2,
+  "model": "commhub:guide_book",
+  "creative_tab": "commhub",
+  "show_progress": false,
+  "i18n": true,
+  "use_resource_pack": true
+}

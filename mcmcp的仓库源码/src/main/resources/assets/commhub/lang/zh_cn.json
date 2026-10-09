@@ -1,0 +1,17 @@
+{
+  "key.categories.commhub": "mcmcp的仓库",
+  "key.commhub.open": "打开共享界面",
+  "container.commhub.hub": "mcmcp的仓库",
+  "itemGroup.commhub": "mcmcp的仓库",
+  "block.commhub.warehouse_input": "仓库输入装置",
+  "block.commhub.warehouse_output": "仓库输出装置",
+  "item.commhub.membership_token": "管理员凭证",
+  "item.commhub.add_member_tool": "添加成员工具",
+  "item.commhub.remove_member_tool": "移除成员工具",
+  "item.commhub.transfer_admin_tool": "转让管理员工具",
+  "item.commhub.guide_book": "仓库指南",
+  "item.commhub.crafting_upgrade_card": "合成升级卡",
+  "item.commhub.automation_core": "自动化核心",
+  "item.commhub.deployer_card": "机械手卡片",
+  "item.commhub.saw_card": "动力锯卡片"
+}

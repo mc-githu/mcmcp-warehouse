@@ -1,0 +1,12 @@
+// Remove repositories that point to the blocked maven.neoforged.net host.
+// All their content is mirrored by StellarDrift / BMCLAPI / Aliyun.
+allprojects {
+    afterEvaluate { p ->
+        def blocked = p.repositories.findAll {
+            it.name == "NeoForged Releases" || it.name == "Mojang Meta"
+        }
+        blocked.each { r ->
+            p.repositories.remove(r)
+        }
+    }
+}

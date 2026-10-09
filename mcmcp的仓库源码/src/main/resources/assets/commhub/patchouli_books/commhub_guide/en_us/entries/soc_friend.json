@@ -1,0 +1,9 @@
+{
+  "name": "好友系统",
+  "icon": "minecraft:player_head",
+  "category": "commhub:social",
+  "sortnum": 0,
+  "pages": [
+    { "type": "patchouli:text", "text": "私聊页有【加好友】/【删好友】/【好友请求】按钮。$(br2)加好友会弹出在线玩家列表；删好友从好友列表选并二次确认；别人加你会出现在请求里，勾同意、叉拒绝。" }
+  ]
+}

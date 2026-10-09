@@ -1,0 +1,100 @@
+{
+  "name": "全部配方",
+  "icon": "minecraft:crafting_table",
+  "category": "commhub:recipes",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "本模组所有合成配方。$(br2)材料主要来自【机械动力】，装了 JEI 后也可以在 JEI 里直接搜索查看。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_warehouse_input.png"
+      ],
+      "text": "仓库输入方块",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_warehouse_output.png"
+      ],
+      "text": "仓库输出方块",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_membership_token.png"
+      ],
+      "text": "管理员凭证（很贵）",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_add_member_tool.png"
+      ],
+      "text": "添加成员工具",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_remove_member_tool.png"
+      ],
+      "text": "移除成员工具",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_transfer_admin_tool.png"
+      ],
+      "text": "管理员工具（无配方，仓库自带）",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_guide_book.png"
+      ],
+      "text": "仓库指南（需 Patchouli）",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_crafting_upgrade_card.png"
+      ],
+      "text": "合成升级卡",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_automation_core.png"
+      ],
+      "text": "自动化核心（只能在遗迹宝箱里找到）",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_deployer_card.png"
+      ],
+      "text": "机械手卡片",
+      "border": true
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "commhub:recipe_saw_card.png"
+      ],
+      "text": "动力锯卡片",
+      "border": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Barter: Post a Bounty",
+  "icon": "commhub:transfer_admin_tool",
+  "category": "commhub:trade",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Where$(/l)$(br2)Press K, click $(l)Barter$(/l) on the left, then pick $(l)Bounty Mode$(/l) at the top left."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)What to fill in$(/l)$(br2)- $(l)I give$(/l): what you offer$(br2)- $(l)I want$(/l): what you ask for$(br2)$(br2)Each row has $(l)10 slots$(/l):$(br2)- $(l)left-click$(/l) a slot to place the item on your cursor$(br2)- $(l)scroll$(/l) to change the amount (hold $(l)Shift$(/l) for +-64)$(br2)- $(l)right-click$(/l) a slot to clear it"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Post it$(/l)$(br2)Fill both sides, then click $(l)Confirm$(/l).$(br2)$(br2)- posting $(l)does not take$(/l) your items; the swap happens when someone accepts$(br2)- on success the slots are cleared; an incomplete setup is kept$(br2)- with JEI you can $(l)drag$(/l) items straight into the slots$(br2)- amounts support $(l)infinite stacking$(/l), like the warehouse"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Requirements$(/l)$(br2)- both sides must actually own the items $(l)inventory + private warehouse$(/l) count together$(br2)- the poster must be $(l)online$(/l)$(br2)- you cannot accept your own bounty$(br2)$(br2)Anything that does not fit your inventory goes to your $(l)mailbox$(/l) - nothing is lost."
+    }
+  ]
+}

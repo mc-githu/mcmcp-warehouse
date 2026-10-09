@@ -1,0 +1,18 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:not", "value": { "type": "neoforge:mod_loaded", "modid": "create" } }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "IKI",
+    "PSP"
+  ],
+  "key": {
+    "P": { "item": "minecraft:paper" },
+    "I": { "item": "minecraft:iron_ingot" },
+    "K": { "item": "commhub:automation_core" },
+    "S": { "item": "minecraft:stonecutter" }
+  },
+  "result": { "id": "commhub:saw_card", "count": 1 }
+}

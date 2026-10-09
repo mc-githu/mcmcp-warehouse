@@ -1,0 +1,50 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+repositories {
+    maven {
+        url = uri("file:///opt/maven-local")
+        metadataSources {
+            mavenPom()
+            gradleMetadata()
+        }
+    }
+    maven { url = uri("https://repo.stellardrift.ca/maven/internal/") }
+    maven { url = uri("https://mirrors4.qlu.edu.cn/bmclapi/") }
+    maven { url = uri("https://maven.aliyun.com/repository/public") }
+    maven { url = uri("https://maven.aliyun.com/repository/central") }
+}
+
+group = 'com.commhub'
+version = '1.11.44'
+
+base {
+    archivesName = 'mcmcp_warehouse'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+neoForge {
+    version = "21.1.252"
+    mods {
+        commhub {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+// JEI 幽灵格支持（仅编译期依赖，不打包进 mod）
+dependencies {
+    compileOnly files("libs/jei-1.21.1-neoforge-19.57.0.451.jar")   // 直接用最新版 JEI
+    compileOnly files("libs/patchouli.jar")
+}

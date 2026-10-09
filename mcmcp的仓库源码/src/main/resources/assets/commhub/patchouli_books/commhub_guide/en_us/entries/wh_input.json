@@ -1,0 +1,11 @@
+{
+  "name": "Warehouse Input Block",
+  "icon": "commhub:warehouse_input",
+  "category": "commhub:warehouse",
+  "sortnum": 0,
+  "pages": [
+    { "type": "patchouli:text", "text": "Place it next to a warehouse: it pushes items/fluid/energy into it.$(br2)Teal arrows pointing inward; right-click to pick the target (shared or a private warehouse)." },
+    { "type": "patchouli:text", "text": "The warehouse is $(l)infinite on two levels$(/l):$(br2)- a single slot can hold up to 100 million (no 64 limit)$(br2)- each page holds 54 slots; a new page is created automatically when full$(br2)$(br2)The real stack amount is stored separately, so it survives restarts. Empty pages are dropped on save." },
+    { "type": "patchouli:text", "text": "Note: at most 99 items are taken out at a time (the rest stays in the slot). That keeps over-limit stacks from leaking into inventories or dropped items, which would crash the game on save." }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "管理员凭证",
+  "icon": "commhub:membership_token",
+  "category": "commhub:basics",
+  "sortnum": 1,
+  "pages": [
+    { "type": "patchouli:text", "text": "右键【管理员凭证】获得管理员权限，并弹出创建私人仓库的起名框。$(br2)创建【成功才消耗】凭证；仓库名重了，凭证【不消耗】。$(br2)配方需要机械动力的精密构件，没装机械动力则用原版材料（下界合金块+钻石块+绿宝石块）。" },
+    { "type": "patchouli:image", "images": ["commhub:recipe_membership_token.png"], "text": "凭证配方（机械动力）", "border": true }
+  ]
+}
