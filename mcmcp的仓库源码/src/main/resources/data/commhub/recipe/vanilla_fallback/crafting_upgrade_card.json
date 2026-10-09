@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:not", "value": { "type": "neoforge:mod_loaded", "modid": "create" } }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "IKI",
+    "PIP"
+  ],
+  "key": {
+    "P": { "item": "minecraft:paper" },
+    "I": { "item": "minecraft:iron_ingot" },
+    "K": { "item": "commhub:automation_core" }
+  },
+  "result": { "id": "commhub:crafting_upgrade_card", "count": 10 }
+}

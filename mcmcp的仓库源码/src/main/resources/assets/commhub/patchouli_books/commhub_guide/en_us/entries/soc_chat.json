@@ -1,0 +1,24 @@
+{
+  "name": "Chat & Sending Items",
+  "icon": "commhub:add_member_tool",
+  "category": "commhub:soc",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Chat tab$(/l)$(br2)- click a friend on the left (the Target button also cycles)$(br2)- type in the box below and press $(l)Enter$(/l)$(br2)- online friends see it right away; offline ones see it later"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The $(l)Send Items$(/l) tab has two parts - don't mix them up:$(br2)$(br2)$(l)Top = Send slots$(/l)$(br2)Put the items you want to mail here (9 x 3)$(br2)$(br2)$(l)Bottom = My Mailbox$(/l)$(br2)Everything others mail to you lands here (9 x 4 = 36 slots)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)How to send (3 steps)$(l)$(br2)1. put items into the $(l)Send slots$(/l)$(br2)2. click $(l)Target: xxx$(/l) to pick the friend$(br2)3. click $(l)Send$(/l)$(br2)$(br2)The items go straight into their $(l)mailbox$(/l) - the friend does not need to be online."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)How to receive$(/l)$(br2)Click $(l)Claim All$(/l) to move everything from the mailbox into your inventory.$(br2)$(br2)- anything that does not fit $(l)stays in the mailbox$(/l) (nothing is lost)$(br2)- the mailbox supports $(l)infinite stacking$(/l)$(br2)- the arrow buttons flip mailbox pages"
+    }
+  ]
+}

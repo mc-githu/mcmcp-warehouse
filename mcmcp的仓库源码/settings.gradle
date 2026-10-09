@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { url = uri("https://mirrors4.qlu.edu.cn/bmclapi/") }
+        maven { url = uri("https://repo.stellardrift.ca/maven/internal/") }
+        maven { url = uri("https://maven.aliyun.com/repository/public") }
+        maven { url = uri("https://maven.aliyun.com/repository/central") }
+    }
+}
+
+rootProject.name = 'commhub'

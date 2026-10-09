@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:not", "value": { "type": "neoforge:mod_loaded", "modid": "create" } }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:diamond" },
+    { "item": "minecraft:gold_ingot" },
+    { "item": "minecraft:stick" }
+  ],
+  "result": { "id": "commhub:add_member_tool", "count": 1 }
+}

@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:not", "value": { "type": "neoforge:mod_loaded", "modid": "create" } }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:netherite_ingot" },
+    { "item": "minecraft:diamond" },
+    { "item": "minecraft:stick" }
+  ],
+  "result": { "id": "commhub:transfer_admin_tool", "count": 1 }
+}

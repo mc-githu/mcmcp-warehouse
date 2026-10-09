@@ -1,0 +1,20 @@
+{
+  "name": "以物换物：接受悬赏",
+  "icon": "commhub:warehouse_output",
+  "category": "commhub:trade",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)在哪$(/l)$(br2)按 K → 左侧$(l)「以物换物」$(/l) → 左上角选$(l)「换物模式」$(/l)，就能看到别人发布的悬赏。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)怎么看$(/l)$(br2)· $(l)◀ ▶$(/l) 翻上下一个悬赏$(br2)· 显示格式：$(l)谁 给: xxx / 要: yyy$(/l)$(br2)$(br2)物品显示的是$(l)游戏里的名字$(/l)（不是内部 id），数量大了会显示成「1.2万」「1亿」。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)怎么接受$(/l)$(br2)点$(l)「接受」$(/l) → 系统自动交换：$(br2)· 你收到对方的$(l)「我给」$(/l)$(br2)· 对方收到你的$(l)「我要」$(/l)（进他的邮箱）$(br2)$(br2)任何一方物品不够都会$(l)自动取消并回滚$(/l)，不会吞东西。"
+    }
+  ]
+}

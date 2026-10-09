@@ -1,0 +1,10 @@
+{
+  "name": "打开主界面",
+  "icon": "minecraft:key",
+  "category": "commhub:basics",
+  "sortnum": 0,
+  "pages": [
+    { "type": "patchouli:text", "text": "按【K】键打开主界面。$(br2)左侧标签：共享大仓库（$(l)默认关闭$(/l)，需要的话在 config/commhub-server.toml 里把 enable_shared_warehouse 改成 true） / 私人仓库 / 私聊 / 传物品，还有「以物换物」按钮。$(br2)底部显示当前电能和液体储量。" },
+    { "type": "patchouli:text", "text": "界面用$(l)彩色框$(/l)把各区域分开，方便辨认：$(br2)· 仓库 —— 青色$(br2)· 邮箱 —— 紫色$(br2)· 背包 / 快捷栏 —— 绿色$(br2)· 管理工具栏 —— 红色$(br2)· 左侧功能栏 —— 黄色" }
+  ]
+}

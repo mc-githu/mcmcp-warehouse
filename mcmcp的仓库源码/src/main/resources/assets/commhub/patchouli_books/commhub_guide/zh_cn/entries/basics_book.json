@@ -1,0 +1,10 @@
+{
+  "name": "这本手册",
+  "icon": "commhub:guide_book",
+  "category": "commhub:basics",
+  "sortnum": 2,
+  "pages": [
+    { "type": "patchouli:text", "text": "这本【仓库指南】右键随时打开。$(br2)配方：书 + 蓝图（机械动力）；没装机械动力则书 + 纸。" },
+    { "type": "patchouli:image", "images": ["commhub:recipe_guide_book.png"], "text": "教程书配方", "border": true }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:not", "value": { "type": "neoforge:mod_loaded", "modid": "create" } }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["NDN", "DED", "NDN"],
+  "key": {
+    "N": { "item": "minecraft:netherite_block" },
+    "D": { "item": "minecraft:diamond_block" },
+    "E": { "item": "minecraft:emerald_block" }
+  },
+  "result": { "id": "commhub:membership_token", "count": 1 }
+}

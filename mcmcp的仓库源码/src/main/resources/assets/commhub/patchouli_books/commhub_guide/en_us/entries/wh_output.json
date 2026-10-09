@@ -1,0 +1,21 @@
+{
+  "name": "仓库输出方块",
+  "icon": "commhub:warehouse_output",
+  "category": "commhub:warehouse",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "【仓库输出装置】把仓库的物品/液体/电能放出去。$(br2)右键同样选择目标仓库。物品由管道/漏斗抽出，液体由管道抽出，电能由机器/电线抽取。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "This block remembers who placed it. Right-click it to see \"Placed by: xxx\"."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "commhub:warehouse_output",
+      "text": "输出方块配方"
+    }
+  ]
+}

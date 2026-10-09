@@ -1,0 +1,10 @@
+{
+  "name": "Opening the Hub",
+  "icon": "minecraft:key",
+  "category": "commhub:basics",
+  "sortnum": 0,
+  "pages": [
+    { "type": "patchouli:text", "text": "Press $(l)K$(/l) to open the hub.$(br2)Tabs on the left: Private Warehouse / Chat / Send Items, plus the Barter button (the Shared Warehouse tab only appears if enable_shared_warehouse = true in config/commhub-server.toml — it is off by default).$(br2)The bottom shows stored energy and fluid." },
+    { "type": "patchouli:text", "text": "Coloured $(l)frames$(/l) separate the areas:$(br2)- Warehouse - cyan$(br2)- Mailbox - purple$(br2)- Inventory / hotbar - green$(br2)- Management tools - red$(br2)- Left sidebar - yellow" }
+  ]
+}

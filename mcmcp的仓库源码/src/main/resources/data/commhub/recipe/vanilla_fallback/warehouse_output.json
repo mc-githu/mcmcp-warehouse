@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:not", "value": { "type": "neoforge:mod_loaded", "modid": "create" } }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["OOO", "ODO", "OOO"],
+  "key": {
+    "O": { "item": "minecraft:obsidian" },
+    "D": { "item": "minecraft:dropper" }
+  },
+  "result": { "id": "commhub:warehouse_output", "count": 1 }
+}

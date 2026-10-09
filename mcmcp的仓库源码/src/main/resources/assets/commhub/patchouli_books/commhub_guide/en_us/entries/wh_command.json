@@ -1,0 +1,9 @@
+{
+  "name": "Commands",
+  "icon": "minecraft:command_block",
+  "category": "commhub:warehouse",
+  "sortnum": 4,
+  "pages": [
+    { "type": "patchouli:text", "text": "/commhub look <name> - view a warehouse$(br2)/commhub test - run the built-in self test (items/energy/fluid/friends/chat/admin)$(br2)$(br2)Test mode is toggled by $(l)allow_self_test$(/l) in the server config." }
+  ]
+}

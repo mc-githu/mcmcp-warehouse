@@ -1,0 +1,17 @@
+{
+  "key.categories.commhub": "mcmcp's Warehouse",
+  "key.commhub.open": "Open Hub",
+  "container.commhub.hub": "mcmcp's Warehouse",
+  "itemGroup.commhub": "mcmcp's Warehouse",
+  "block.commhub.warehouse_input": "Warehouse Input",
+  "block.commhub.warehouse_output": "Warehouse Output",
+  "item.commhub.membership_token": "Admin Token",
+  "item.commhub.add_member_tool": "Add Member Tool",
+  "item.commhub.remove_member_tool": "Remove Member Tool",
+  "item.commhub.transfer_admin_tool": "Transfer Admin Tool",
+  "item.commhub.guide_book": "Warehouse Guide",
+  "item.commhub.crafting_upgrade_card": "Crafting Upgrade Card",
+  "item.commhub.automation_core": "Automation Core",
+  "item.commhub.deployer_card": "Deployer Card",
+  "item.commhub.saw_card": "Saw Card"
+}

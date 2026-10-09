@@ -1,0 +1,10 @@
+{
+  "name": "这本手册",
+  "icon": "commhub:guide_book",
+  "category": "commhub:basics",
+  "sortnum": 2,
+  "pages": [
+    { "type": "patchouli:text", "text": "这本【仓库指南】就是你现在看的书，右键它随时打开。$(br2)配方：用纸+书合成。" },
+    { "type": "patchouli:crafting", "recipe": "commhub:guide_book", "text": "教程书配方" }
+  ]
+}

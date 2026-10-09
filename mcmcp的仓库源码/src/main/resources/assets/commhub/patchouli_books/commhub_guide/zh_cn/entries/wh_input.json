@@ -1,0 +1,11 @@
+{
+  "name": "仓库输入方块",
+  "icon": "commhub:warehouse_input",
+  "category": "commhub:warehouse",
+  "sortnum": 0,
+  "pages": [
+    { "type": "patchouli:text", "text": "放在仓库旁边，把物品/液体/电能送进仓库。$(br2)青绿色四箭头指向中心；右键可设置目标（共享仓库或某个私人仓库）。" },
+    { "type": "patchouli:text", "text": "$(l)仓库是两层无限$(/l)：$(br2)· 单格能堆到上亿（不受 64 限制）$(br2)· 每页 54 格，装满自动加新页$(br2)$(br2)单格真实数量是单独存档的，所以重启后堆多少还在；空页存档时会自动丢掉，空仓库不占地方。" },
+    { "type": "patchouli:text", "text": "注意：大堆一次最多取出 99（剩下的留在格子里）。这是为了不让「超过存档上限的堆叠」流到背包/掉落物里导致崩服。" }
+  ]
+}

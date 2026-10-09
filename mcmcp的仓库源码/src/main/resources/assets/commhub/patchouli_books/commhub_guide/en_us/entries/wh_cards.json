@@ -1,0 +1,28 @@
+{
+  "name": "Deployer / Saw Cards",
+  "icon": "commhub:deployer_card",
+  "category": "commhub:warehouse",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Both cards work like the $(l)Crafting Upgrade Card$(/l):$(br2)- $(l)hold and right-click the air$(/l) to configure (inventory at the bottom)$(br2)- put the card into a $(l)private warehouse card slot$(/l)$(br2)$(br2)The warehouse then does one operation about every 0.5 s; ingredients come from and results return to the warehouse."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Saw Card$(/l): $(l)input item$(/l) + chosen $(l)output$(/l).$(br2)$(br2)- cutting: log to planks, stone to slabs (vanilla + Create cutting recipes)$(br2)- $(l)stripping$(/l): $(l)log to stripped log$(/l)$(br2)$(br2)When one input has several outputs your choice pins the recipe, so it $(l)never picks the wrong one$(/l)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Byproduct toggle$(/l) (config $(l)enable_byproducts$(/l)):$(br2)Some mods add byproducts (e.g. sawdust when stripping a log).$(br2)- on (default): byproducts also go into the warehouse$(br2)- off: only the main product you picked"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Deployer Card$(/l): $(l)held item$(/l) + $(l)input item$(/l).$(br2)It performs \"apply item onto something\" recipes (Create item_application):$(br2)$(br2)- $(l)andesite alloy + stripped log -> andesite casing$(/l)$(br2)$(br2)Left/right click is auto-detected and it $(l)never attacks mobs$(/l)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Both recipes include the $(l)Automation Core$(/l) (found in ruin chests only; duplicate with 1 core + 1 netherite ingot + 7 diamonds to get 2)::$(br2)- Deployer Card = 4 paper + 3 iron sheets + core + Mechanical Arm$(br2)- Saw Card = 4 paper + 3 iron sheets + core + Mechanical Saw$(br2)$(br2)(without Create: dispenser / stonecutter instead)"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "重命名仓库",
+  "icon": "minecraft:name_tag",
+  "category": "commhub:warehouse",
+  "sortnum": 3,
+  "pages": [
+    { "type": "patchouli:text", "text": "在私人仓库标签页点【重命名】，给当前仓库换名字。$(br2)只有仓库主人或管理员能改名；新名字不能和别人的重名。$(br2)改名后界面会自动刷新。" },
+    { "type": "patchouli:text", "text": "提示：如果某个输入/输出方块之前指向旧名字，改名后重新右键方块选一次目标即可。" }
+  ]
+}

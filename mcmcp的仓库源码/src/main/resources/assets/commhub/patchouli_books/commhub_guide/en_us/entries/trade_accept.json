@@ -1,0 +1,20 @@
+{
+  "name": "Barter: Accept a Bounty",
+  "icon": "commhub:warehouse_output",
+  "category": "commhub:trade",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Where$(/l)$(br2)Press K, click $(l)Barter$(/l) on the left, then pick $(l)Exchange Mode$(/l) to see bounties posted by others."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)How to read it$(/l)$(br2)- $(l)arrows$(/l) flip to the prev/next bounty$(br2)- format: $(l)name gives: xxx / wants: yyy$(/l)$(br2)$(br2)Items show their $(l)in-game names$(/l) (not internal ids); big amounts are shortened to things like \"12K\" / \"100M\"."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)How to accept$(/l)$(br2)Click $(l)Accept$(/l) and the mod swaps automatically:$(br2)- you receive their $(l)I give$(/l)$(br2)- they receive your $(l)I want$(/l) (into their mailbox)$(br2)$(br2)If either side lacks the items, the trade is $(l)cancelled and rolled back$(/l) - nothing is swallowed."
+    }
+  ]
+}

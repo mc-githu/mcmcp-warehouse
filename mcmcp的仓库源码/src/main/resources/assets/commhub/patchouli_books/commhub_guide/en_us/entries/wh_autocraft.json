@@ -1,0 +1,12 @@
+{
+  "name": "Auto Crafting (Upgrade Card)",
+  "icon": "commhub:crafting_upgrade_card",
+  "category": "commhub:warehouse",
+  "sortnum": 5,
+  "pages": [
+    { "type": "patchouli:text", "text": "Craft a $(l)Crafting Upgrade Card$(/l) ($(l)Automation Cores$(/l) come from ruin chests, or duplicate one with 1 core + 1 netherite ingot + 7 diamonds; one craft yields 10 cards) and put it into the card slots on the right of a $(l)private$(/l) warehouse screen ($(l)up to 3 cards$(/l)). The warehouse will then $(l)auto-craft$(/l) the recipes on the card.$(br2)$(l)Only private warehouses have card slots$(/l) (the shared warehouse does not)." },
+    { "type": "patchouli:text", "text": "$(l)To configure: hold the card and right-click the air$(/l) - the config screen opens:$(br2)left is the $(l)target list$(/l) (5 targets per card);$(br2)right is the editor: 3x3 recipe slots + a result slot.$(br2)Use the $(l)mouse wheel$(/l) to scroll when the list does not fit." },
+    { "type": "patchouli:text", "text": "Setting a recipe (your $(l)inventory$(/l) is shown at the bottom):$(br2)- $(l)pick up an item from the inventory, then click a recipe slot$(/l)$(br2)- with $(l)JEI$(/l) you can also drag items straight in$(br2)- right click a slot = clear$(br2)$(br2)Press $(l)Save$(/l) when done, then put the card into a warehouse card slot." },
+    { "type": "patchouli:text", "text": "Auto-crafting rules:$(br2)- one craft about every $(l)0.5 s$(/l)$(br2)- ingredients are taken $(l)from the warehouse$(/l), results go $(l)back into it$(/l)$(br2)- if ingredients are missing it $(l)stops$(/l) (no half-consumed materials)$(br2)- the recipe must really exist in the crafting table" }
+  ]
+}
